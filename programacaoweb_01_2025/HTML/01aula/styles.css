@@ -1,0 +1,15 @@
+body {
+    background-color: #002415;
+    text-align: center;
+}
+
+p,
+footer,
+h1 {
+    color: aliceblue;
+}
+
+image{
+    border-radius: 10px;
+    
+}
