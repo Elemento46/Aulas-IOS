@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <select name="sudeste" id="sudeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Merda</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <input autocomplete="on" list="locomocao" name="meiosTransporte" id="meiosTransporte" placeholder="Seu Meio de Transporte">
+        <!-- DataList cria uma lista de dados que podem ser acessados pelo restante do form sendo comumente para sugestões de preenchimento -->
+        <datalist id="locomocao">
+            <option value="bike"></option>
+            <option value="carro"></option>
+            <option value="moto"></option>
+            <option value="onibus"></option>
+            <option value="cavalo"></option>
+            <option value="barco"></option>
+        </datalist>
+        <br>
+        <br>
+        <!-- O tipo Range serve para criar um slider a fim de facilitar a entrada de dados. 
+        Um bom exemplo é um slider de volume para um aplicativo de música -->
+        0 <input type="range" name="quillometros" id="quillometros" min="200km" max="1400km"> 100
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
