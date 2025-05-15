@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laricel Telecom</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="formulario03.css">
+</head>
+
+<body class="bg-light">
+    <header class="text-center bg-danger py-4 text-white">
+        <h1>Laricel Telecom</h1>
+        <img src="https://s2-techtudo.glbimg.com/Ltmki1gv3afVEbIoY7GyvyoDp8Y=/0x0:1215x765/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/A/w/EMktntTKG6BPEuBAYseg/chip-da-laricel.jpg"
+            alt="Laricel Banner" class="img-fluid rounded shadow mt-3" style="max-height: 250px;">
+    </header>
+
+    <main class="container my-5">
+        <form id="contrataPlano">
+            <div class="card shadow mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4>Dados do Cliente</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="cep" name="cep" minlength="8" maxlength="8">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numeroTelefone" class="form-label">Número de Telefone</label>
+                        <input type="tel" class="form-control" id="numeroTelefone" name="numeroTelefone"
+                            placeholder="ex.: (11) 91234-5678">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-header bg-success text-white">
+                    <h4>Conheça nossos planos</h4>
+                </div>
+                <div class="card-body row justify-content-center g-3">
+                    <div class="col-md-4 text-center">
+                        <input type="radio" class="btn-check" name="planoSelecionado" id="plano1" autocomplete="off">
+                        <label class="btn btn-outline-primary w-100" for="plano1">
+                            <img src="assets/plano1.png" alt="Plano 1" class="img-fluid imagemPlano">
+                        </label>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <input type="radio" class="btn-check" name="planoSelecionado" id="plano2" autocomplete="off">
+                        <label class="btn btn-outline-primary w-100" for="plano2">
+                            <img src="assets/plano2.png" alt="Plano 2" class="img-fluid imagemPlano">
+                        </label>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <input type="radio" class="btn-check" name="planoSelecionado" id="plano3" autocomplete="off">
+                        <label class="btn btn-outline-primary w-100" for="plano3">
+                            <img src="assets/plano3.png" alt="Plano 3" class="img-fluid imagemPlano">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <input type="submit" class="btn btn-danger btn-lg" value="Contratar plano">
+            </div>
+        </form>
+    </main>
+
+    <footer class="text-center bg-danger text-white py-3">
+        <p>&copy; Desenvolvido no Instituto da Oportunidade Social 💜®</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularious</title>
+</head>
+
+<body>
+    <form action="mailto:rochalirathiago@outlook.com" method="post">
+        <!-- for = para ; esse label é para o elemento id cNome-->
+        <label for="cNome">Foia Amarela:</label><br /> <!-- Rótulo -->
+        <!-- A propriedade maxlength, determina a quantidade máxima de caractéres que seu input pode receber  -->
+        <input autocomplete="off" type="text" size="50" maxlength="50" name="tNome" id="cNome
+         " required="required" />
+        <br>
+        <br>
+        <!-- o Radio permite quye o usuário escolha apenas uma opção de várias.
+         Para identificar que radios diferentes respondem a mesma pertgunta, colocamos o mesmo name em todos.
+         O que diferencia um radio do outro é seu id, que dever ser único-->
+        <input type="radio" name="foiaAmarela" id="foiaAmarela" value="Foia Amarela">
+        <label for="foiaAmarela">Foia Amarela</label>   
+        <br>
+        <input type="radio" name="foiaAmarela" id="foiaAmarela" value="Foia Amarela">
+        <label for="foiaAmarela">Foia Amarela</label>
+        <br>
+        <input type="radio" name="foiaAmarela" id="foiaAmarela" value="Foia Amarela">
+        <label for="foiaAmarela">Foia Amarela</label>
+        <br>
+        <br>
+        <!-- TextArea é um elemento formulário que serve para inserir texto em grande quantidade.
+        Você pode definir o tamanho da caixa de texto utilizando cols e rows.
+        É possivel pré-preencher o textArea colocando um texto padrão entre as tags de abertura e fechamento -->
+        <label for="comentarioFoia">Foia Amarela:</label><br>
+        <textarea name="comentarioFoia" id="comentarioFoia" cols="30" rows="10"></textarea><br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Submit faz o envio dos dados preenchidos pelo usuário.
+         O atributo Value faz com que um texto apareça dentro do input-->
+        <input type="submit" value="Foia Amarela">
+    </form>
+</body>
+
+</html>
